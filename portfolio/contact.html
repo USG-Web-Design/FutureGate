@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head><!--to store matadatas-->
+     
+	<title>contact file</title>
+
+</head><!--style for body since there's no CSS file link to this-->
+<body style="font-size: 20px; font-family: Nunito; text-align: center; background-color: lavenderblush; color: black;">
+  <!--link to portfolio-->
+  <br><a class="active" href="final.html">Back to Portfolio</a><br><br><br><br>
+  <!--Javascript part that display the total question count-->
+  <h3 id="questionCount">Total Questions: 0</h3> 
+  <label for="userName">Enter your name below</label>
+  <br><!--a box that you can type text init-->
+  <input type="text" id="userName" name="userName" value="">
+  <p id="response"></p>
+  <label for="question">Enter your question below</label><br>
+  <!--a box that you can type text init, bigger box than before using size=""-->
+  <input type="text" id="question" name="question" value="" size="100">
+  <br><br>
+  <!--if you click the button it will do this function(javascript)-->
+  <button onclick="submitQuestion()">Submit</button>
+  <p id="response"></p>
+
+  <script type="text/javascript">
+    // Variable to store the questions and count
+    var questionObject = {
+      questions: [],
+      count: 0
+    };
+
+    // Function to update the question count
+    function updateQuestionCount() {
+      var questionCount = questionObject.count;
+      document.getElementById("questionCount").textContent = "Total Questions: " + questionCount;
+    }
+
+    // Function to submit the question
+    function submitQuestion() {
+      var userName = document.getElementById("userName").value;
+      var question = document.getElementById("question").value;
+
+      // Increase the question count
+      questionObject.count++;
+
+      // Update the question count display
+      updateQuestionCount();
+
+      // Clear the input part
+      document.getElementById("userName").value = "";
+      document.getElementById("question").value = "";
+
+      // An alert window, when you click sumbit this alert will appear
+      alert("Thank you, your question has been successfully submitted!");
+    }
+  </script>
+</body>
+
+</html>

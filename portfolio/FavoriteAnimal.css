@@ -1,0 +1,33 @@
+/* style for body, everything under body will follow this style 
+unless you assign them a new style later by using different element like class, div */
+body {
+	font-family: cursive; background-color: aliceblue; font-size: 20px; 
+}
+
+h1 {
+	font-family: helvetica; background-color: powderblue; font-size: 70px; text-align: center; 
+}
+
+h2 {
+	font-family: monospace; color: mediumslateblue; font-size: 30px; text-align: center; 
+}
+/* to give all div same font, color and font-size */
+div { 
+	font-family: fantasy; color: midnightblue; font-size: 25px; 
+ }
+ /*depending on the class, it reassigns the font size and give them a new color*/
+ .information {
+ 	font-size: 25px; color: rebeccapurple;
+ }
+.citation {
+ 	font-size: 15px; color: rebeccapurple;
+ }
+
+ .funfacts{
+font-size: 25px; color: rebeccapurple;
+ }
+
+p {
+	font-family: fantasy; color: powderblue; font-size: 30px; text-align: center; background-color: cornflowerblue;
+}
+

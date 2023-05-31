@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<!--This make the file html-->
+<html>
+<!-- until </html>, it's html file -->
+<head>
+	<!-- head, we store meta data and connect to css file -->
+	<!-- this is connecting to css file which is "B.css"-->
+	<link rel="stylesheet" type="text/css" href="B.css">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- this is title of the webpage -->
+	<title>Which AW teacher are you?</title>
+</head>
+<!--Body is the visible part of website -->
+<body><h3><a class="active"href="final.html">Back to Portfolio</a><br></h3>
+<!-- animation div-->
+	<div class="bg-text">
+		<!-- This is our header (biggest)-->
+    <h1>Which AWS Teacher Are You?</h1>
+  </div>
+<!-- animation div-->
+  <div class="container">
+    <div class="text">
+      <h1>loading...</h1>
+    </div>
+    <div class="loading">
+      <div class="line-box">
+        <div class="line">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- form makes the quiz format in html-->
+	<form>
+<table>
+	<tr>
+		<th>
+		<label for="userName"> Enter your name below </label>
+		<br>
+		<!-- this is an input where you can give your name-->
+		<input type="text" id="userName" name="userName" value="Type your name here!">
+	</th>
+	</tr>
+</table>
+		<br>
+<!-- we made the form part as a table-->
+		  <table>
+    <tr>
+      <th>You walk into the AWS bookstore, what are you getting?</th>
+      <th>Who is your fashion inspiration?</th>
+    </tr>
+    <tr>
+      <td>
+        <!-- radio makes so that you can only choose one in all of the option -->
+        <!-- used the same format throughout the form part-->
+        <!-- each alphabet(id) match with one teacher, but by changing the order of alphabet, making the quiz less obvious-->
+        <!-- it has own id-->
+        <input type="radio" name="bookstore" id="1a">
+        <label for="1a">Mountain Dew</label>
+        <br>
+          <input type="radio" name="bookstore" id="1d">
+        <label for="1d">Chocolate</label>
+        <br>
+        <input type="radio" name="bookstore" id="1b">
+        <label for="1b">Trail Mix</label>
+        <br>
+        <input type="radio" name="bookstore" id="1c">
+        <label for="1c">Licorice</label>
+        <br>
+      
+        <input type="radio" name="bookstore" id="1e">
+        <label for="1e">Scone and Jam</label>
+      </td>
+      <td>
+       
+        
+        <input type="radio" name="fashion" id="2c">
+        <label for="2c">Kim Kardashian</label>
+        <br>
+        <input type="radio" name="fashion" id="2b">
+        <label for="2b">Jojo Siwa</label>
+        <br>
+        <input type="radio" name="fashion" id="2e">
+        <label for="2e">Queen Elizabeth</label>
+        <br>
+         <input type="radio" name="fashion" id="2a">
+        <label for="2a">Sherlock</label>
+        <br>
+        <input type="radio" name="fashion" id="2d">
+        <label for="2d">Jungkook</label>
+      </td>
+    </tr>
+    <tr>
+      <th>You wake up as Head of Schools! What do you do?</th>
+      <th>!NEWS FLASH! Gators have gone extinct :( Pick a new AWS Mascot</th>
+    </tr>
+    <tr>
+      <td>
+       
+        <input type="radio" name="head" id="3b">
+        <label for="3b">Make every day "Bring Your Pet to School Day"</label>
+        <br>
+        <input type="radio" name="head" id="3a">
+        <label for="3a">Mandatory Cross Country</label>
+        <br>
+        <input type="radio" name="head" id="3d">
+        <label for="3d">Get rid of the uniform policy</label>
+        <br>
+        <input type="radio" name="head" id="3e">
+        <label for="3e">Make tea</label>
+        <br>
+         <input type="radio" name="head" id="3c">
+        <label for="3c">Plant carnivorous plants on the front lawn</label>
+        <br>
+     </td>
+     <td>
+     	<input type="radio" name="fashion1" id="4c">
+        <label for="4c">Chameleon</label>
+        <br>
+
+        <input type="radio" name="fashion1" id="4a">
+        <label for="4a">Cheetah</label>
+        <br>
+        <input type="radio" name="fashion1" id="4d">
+        <label for="4d">Monkey</label>
+        <br>
+        <input type="radio" name="fashion1" id="4b">
+        <label for="4b">Cats</label>
+<br>
+        <input type="radio" name="fashion1" id="4e">
+        <label for="4e">The Annies</label>
+     </td>
+   </tr>
+   <tr>
+      <th>What is your favorite dessert?</th>
+      <th>Where is your ideal spring break location?</th>
+  </tr>
+  <tr>
+    <td>
+     
+      <input type="radio" name="fashion2" id="5b">
+      <label for="5b">Apple Pie</label>
+      <br>
+      <input type="radio" name="fashion2" id="5e">
+      <label for="5e">Pound Cake</label>
+      <br>
+      <input type="radio" name="fashion2" id="5c">
+      <label for="5c">Mochi</label>
+      <br>
+      <input type="radio" name="fashion2" id="5d">
+      <label for="5d">Chocolate</label>
+      <br>
+       <input type="radio" name="fashion2" id="5a">
+      <label for="5a">I don't eat dessert.</label>
+   
+   </td>
+   <td>
+   	<input type="radio" name="fashion3" id="6d">
+    <label for="6d">Costa Rica</label>
+    <br>
+    <input type="radio" name="fashion3" id="6a">
+    <label for="6a">Canada</label>
+    <br>
+    <input type="radio" name="fashion3" id="6c">
+    <label for="6c">Hawaii</label>
+    <br>
+    <input type="radio" name="fashion3" id="6e">
+    <label for="6e">Road Trip</label>
+    <br>
+    <input type="radio" name="fashion3" id="6b">
+    <label for="6b">Missouri</label>
+   </td>
+  </tr>
+  </table>
+<!-- this is a button, which you can enter, and if you enter the info will go to javascript part and calculate the right outcome for you -->
+<table>
+<br>
+	<tr>
+<th>
+	<input type="button" name="Submit" value="Enter" onclick="hello();">
+</th>
+</tr>
+</table>
+<br><br>
+
+	</form>
+
+
+<!--<div id="choice">
+	<p><img id="MrDroubay" src="BMr.Droubay.jpeg">
+	<img id="MrSidman" src="BMr.Sidman.jpeg">
+	<img id="MrGraham" src="BMr.Graham.jpeg">
+	<img id="MrConsidine" src="BMr.Considine.jpeg">
+	<img id="MsAbby" src="BMs.Hemsell.jpeg">
+	<img id="MsAbby" src="BMs.Abby.jpeg">
+	<img id="MsBarber" src="BMs.Barber.jpeg"></p>
+  </div>-->
+<!-- give id for response value -->
+
+<table>
+<tr><th>
+<p id="response"></p>
+</th></tr>
+</table>
+<br><br><br>
+
+
+<table>
+<tr><th>
+<p><a href="https://cdn-usa.skypixel.com/uploads/usa_files/photo/image/b118abe3-9f89-4930-b225-066a1faf9314.jpg@!1920"> citation</p>
+</th></tr>
+</table>
+<br><br><br>
+</body>
+
+
+
+
+<!-- from here until </script>, it is javascript-->
+<script type="text/javascript">
+	//this is how you comment
+	//this is a funtion which is connected to the button
+	function hello() {
+
+		//This is all part of the function
+		var name = document.getElementById("userName").value;
+//new variable response
+		var response = "Good to meet you, ";
+//using the name value in this new value"response"
+		response = response + name;
+//giving variables a value(0) making them calculable later
+		var a=0;
+		var b=0;
+		var c=0;
+		var d=0;
+		var e=0;
+
+
+	//new variable choice, make it empty
+		var choice="";
+		//Droubay
+		if (document.getElementById("1a").checked) {
+			choice = "1a";
+			a=a+1;
+		}
+		if (document.getElementById("2a").checked) {
+			choice = "2a";
+			a=a+1;
+		}
+			if (document.getElementById("3a").checked) {
+			choice = "3a";
+			a=a+1;
+		}
+		if (document.getElementById("4a").checked) {
+			choice = "4a";
+			a=a+1;
+		}
+			if (document.getElementById("5a").checked) {
+			choice = "5a";
+			a=a+1;
+		}
+		if (document.getElementById("6a").checked) {
+			choice = "6a";
+			a=a+1;
+		}
+
+		//Barber
+		if (document.getElementById("1b").checked) {
+			choice = "1b";
+			b=b+1;
+		}
+		if (document.getElementById("2b").checked) {
+			choice = "2b";
+			b=b+1;
+		}
+		if (document.getElementById("3b").checked) {
+			choice = "3b";
+			b=b+1;
+		}
+			if (document.getElementById("4b").checked) {
+			choice = "4b";
+			b=b+1;
+		}
+		if (document.getElementById("5b").checked) {
+			choice = "5b";
+			b=b+1;
+		}
+		if (document.getElementById("6b").checked) {
+			choice = "6b";
+			b=b+1;
+		}
+		//Considine
+		if (document.getElementById("1c").checked) {
+			choice = "1c";
+			c=c+1;
+		}
+		if (document.getElementById("2c").checked) {
+			choice = "2c";
+			c=c+1;
+		}
+		if (document.getElementById("3c").checked) {
+			choice = "3c";
+			c=c+1;
+		}
+		if (document.getElementById("4c").checked) {
+			choice = "4c";
+			c=c+1;
+		}
+		if (document.getElementById("5c").checked) {
+			choice = "5c";
+			c=c+1;
+		}
+		if (document.getElementById("6c").checked) {
+			choice = "6c";
+			c=c+1;
+		}
+
+		//Phillips
+		if (document.getElementById("1d").checked) {
+			choice = "1d";
+			d=d+1;
+		}
+		if (document.getElementById("2d").checked) {
+			choice = "2d";
+			d=d+1;
+		}
+		if (document.getElementById("3d").checked) {
+			choice = "3d";
+			d=d+1;
+		}
+		if (document.getElementById("4d").checked) {
+			choice = "4d";
+			d=d+1;
+		}
+		if (document.getElementById("5d").checked) {
+			choice = "5d";
+			d=d+1;
+		}
+		if (document.getElementById("6d").checked) {
+			choice = "6d";
+			d=d+1;
+		}
+
+		//sidman
+		if (document.getElementById("1e").checked) {
+			choice = "1e";
+			e=e+1;
+		}
+		if (document.getElementById("2e").checked) {
+			choice = "2e";
+			e=e+1;
+		}
+		if (document.getElementById("3e").checked) {
+			choice = "3e";
+			e=e+1;
+		}
+		if (document.getElementById("4e").checked) {
+			choice = "4e";
+			e=e+1;
+		}
+		if (document.getElementById("5e").checked) {
+			choice = "5e";
+			e=e+1;
+		}
+		if (document.getElementById("6e").checked) {
+			choice = "6e";
+			e=e+1;
+		}
+
+		
+		//window.alert(a)
+		//window.alert(b)
+		//window.alert(c)
+		//window.alert(d)
+		//window.alert(e)
+
+
+		//Most var valueable
+
+
+		//first step : calculate if any of the alphabet(value) has more than 3 points,(if you have super consistant answer) and if true, match to the right person who was assigned to each value
+		if (a>3)
+			{choice="MrDroubay";}
+
+		if (b>3){
+			choice="MsBarber";
+		}
+		if (c>3){
+			choice="MrConsidine";
+		}
+		if (d>3){
+			choice="MrPhillips";
+		}
+		if (e>3){
+			choice="MrSidman";
+		}
+		//second step: calculate if any of the alphabet has value of 3, and if true, check if you have another alphabet value with 3, if ture, you will have half of each teacher, and assigned them a nutural teacher, in this case, Mr. Graham
+		//if none of other alphabet has value of 3, give the same answer as the first step. overall, matching the teacher with the most common answer 
+
+		if (a==3){
+			//window.alerchoice("answer should be Han")
+			if ((b==3)||(c==3)||(d==3)||(e==3))
+			{
+			choice="MrGraham";}
+			else{
+			choice="MrDroubay";
+			}}
+		if (b==3){
+			if ((a==3)||(c==3)||(d==3)||(e==3))
+			{
+			choice="MrGraham";}
+		else{
+			choice="MsBarber";
+			}}
+		if (c==3){
+			if ((a==3)||(b==3)||(d==3)||(e==3))
+			{
+			choice="MrGraham";}
+		else{
+			choice="MrConsidine";
+			}}
+		if (d==3){
+			if ((a==3)||(b==3)||(c==3)||(e==3))
+			{
+			choice="MrGraham";}
+			else{
+			choice="MrPhillips";
+			}}
+		if (e==3){
+			if ((a==3)||(b==3)||(c==3)||(d==3))
+			{
+			choice="MrGraham";}
+			else{
+			choice="MrSidman";
+			}}
+// third step:  if any of the alphabet has value of 2, and if true, check if you have another alphabet value with 2, if ture, you will have half of each teacher, and assigned them another nutural teacher, in this case, Ms. Abby
+		//if none of other alphabet has value of 2, give the same answer as the first step. overall, matching the teacher with the most common answer
+		if (a==2){
+			//window.alerchoice("answer should be no")
+			if ((b==2)||(c==2)||(d==2)||(e==2))
+			{
+			choice="MsAbby";}
+		else{
+			choice="MrDroubay";
+			}}
+	if (b==2){
+			if ((a==2)||(c==2)||(d==2)||(e==2))
+			{
+			choice="MsAbby";}
+		else{
+			choice="MsBarber";
+			}}
+		if (c==2){
+			if ((a==2)||(b==2)||(d==2)||(e==2))
+			{
+			choice="MsAbby";}
+		else{
+			choice="MrConsidine";
+			}}
+		if (d==2){
+			if ((a==2)||(b==2)||(c==2)||(e==2))
+			{
+			choice="MsAbby";}
+		else{
+			choice="MrPhillips";
+			}}
+		if (e==2){
+			if ((a==2)||(b==2)||(c==2)||(d==2))
+			{
+			choice="MsAbby";}
+		else{
+			choice="MrSidman";
+			}}
+//redoing the first step, reducing the error, and make sure you get the right person if you have more than 3 points in certain alphabet
+	     if (a>3)
+			{choice="MrDroubay";}
+
+		if (b>3){
+			choice="MsBarber";
+		}
+		if (c>3){
+			choice="MrConsidine";
+		}
+		if (d>3){
+			choice="MrPhillips";
+		}
+		if (e>3){
+			choice="MrSidman";
+		}
+		//this is recalculate you response with new response with ths matching teacher
+
+		response = response + " ,teacher matching with you is " + choice;
+
+		//this is the line which will make the response appear in actual html
+
+		document.getElementById("response").innerHTML = response;
+
+		//var image = document.getElementById("choice")
+		//image="visible";
+
+
+}
+
+</script>
+
+</html>

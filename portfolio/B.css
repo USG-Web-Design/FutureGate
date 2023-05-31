@@ -1,0 +1,259 @@
+
+/* The body contains all of the basics like font, sizes, background image, etc. 
+It also includes the double border seen when you first load the page.*/
+body{
+  font-family: Korolev-Medium;
+
+  font size: 30px;
+  height: 100%;
+  border-style: double;
+  border-width: 15px;
+  border-color: blanchedalmond;
+  margin: 50px;
+  background-image: url("aws.jpg");
+
+  color:navy ;
+  scroll-margin: 20px;
+}
+
+body, html {
+  height: 100%;
+}
+
+/* This is the class that defines the color changing title. 
+It works by creating a gradient color background that moves linearly (animation).
+The two webkit functions make it so the color is filling the text (rather than the background). The gradient is zoomed to 
+400% which is important for the animation.*/
+
+.bg-text {
+  background: linear-gradient(90deg, black, #001d3d, #003566, #ffc300, #ffd60a, black);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip: text;
+  animation: animate 10s linear infinite;
+  background-size: 400%;
+  color: whitesmoke;
+  font-weight: bold;
+ font-family: korolev-medium;
+  letter-spacing: 2px;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+
+}
+
+
+/* This is the keyframes for the color changing animation. 
+As you can see, it changes the background position from 0% to 400% which moves the position of the "background" from left to right, making it look like the text is changing color. */
+
+@keyframes animate {
+  0% {background-position: 0%}
+  100% {background-position: 400%}
+}
+
+/*The following classes control the loading bar. There is a container class that holds all of the other classes such as the "loading" text, the sliding bar, the border box of the bar, etc.
+*/
+
+*, *::before, *::after {
+  box-sizing:border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.text {
+  color: navy;
+  margin-bottom: 1px;
+  font-size: 20px;
+  letter-spacing: 5px;
+
+}
+
+.loading {
+  width: 100%;
+  height: 20%;
+  display: inline-flex;
+  justify-content: center;
+}
+
+
+.loading .line-box{
+  padding: 2px;
+  width: 30%;
+  height: 25px;
+  border: 2px solid navy;
+  border-radius: 20px;
+}
+
+.loading .line-box .line {
+  height: 17px;
+  border-radius: 20px;
+  background: white;
+  animation: loading 5s forwards cubic-bezier(0,0,0,0);
+
+  
+}
+
+/* The loading bar moves forward with this animation. Also, at 80% of the animation, the opacity starts to lower and the yellow bar disappears after the animation is over.  */
+@keyframes loading {
+  0%{width: 0%}
+  80% {opacity: 0.7}
+  100% {width: 100%; opacity: 0}
+
+}
+
+
+/* These CSS functions control the tables where the questions are. There are two hover funtions for the table
+headers and table data, which make them white when you hover over them, making the words easier to see. */
+
+  table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 5%;
+  background-color: blanchedalmond;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  background-color: blanchedalmond;
+}
+
+th:hover {background-color: white;}
+
+td:hover {background-color: white;}
+body{
+  font-family: Nunito;
+  font size: 35px;
+  background-color: blanchedalmond;
+  height: 100%;
+  border-style: double;
+  border-width: 15px;
+  border-color: #ffc300;
+  margin: 90px;
+  font-family: korolev-medium;
+
+ 
+}
+
+
+
+body, html {
+  height: 100%;
+}
+
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background: linear-gradient(90deg, black, #001d3d, #003566, #ffc300, #ffd60a, black);
+  -webkit-text-fill-color:transparent;
+  -webkit-background-clip: text;
+  animation: animate 10s linear infinite;
+  background-size: 400%;
+  color: whitesmoke;
+  font-weight: bold;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 90%;
+  padding: 15px;
+  text-align: center;
+  font-size: 40px;
+
+}
+
+@keyframes animate {
+  0% {background-position: 0%}
+  100% {background-position: 400%}
+}
+
+
+
+*, *::before, *::after {
+  box-sizing:border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.text {
+  color: navy;
+  margin-bottom: 1px;
+  font-size: 20px;
+  letter-spacing: 5px;
+}
+
+.loading {
+  width: 100%;
+  height: 20%;
+  display: inline-flex;
+  justify-content: center;}
+
+.loading .line-box{
+  padding: 2px;
+  width: 30%;
+  height: 25px;
+  border: 2px solid navy;
+  border-radius: 20px;
+  animation: disappear;
+}
+
+.loading .line-box .line {
+  height: 17px;
+  border-radius: 20px;
+  background: #003566;
+  animation: loading 5s forwards cubic-bezier(0,0,0,0);
+
+  
+}
+
+@keyframes loading {
+  0%{width: 0%}
+  80% {opacity: 0.7}
+  100% {width: 100%; opacity: 0}
+
+}
+
+@keyframes disappear {
+  0%{display: block;}
+  100%{display: none;}
+}
+
+
+  table {
+  border-collapse: collapse;
+  width: 90%;
+  margin-left: 5%;
+  font-size: 20px;
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th:hover {background-color: white;}
+
+

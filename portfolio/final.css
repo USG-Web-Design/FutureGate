@@ -1,0 +1,141 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito";
+}
+
+h2{
+	font-size: 30px;
+	text-align: center;
+}
+
+h3{
+	font-size: 15px;
+	text-align: center;
+}
+
+ .question {
+      cursor: pointer;
+      font-weight: bold;
+      margin-bottom: 70px;
+      
+    }
+/* Initially hide the answer */
+    .answer {
+      display: none; 
+      margin-bottom: 100px;
+      background-color: wheat;
+    }
+ /* Hover effect - Show the answer when hovering over the question */
+    .question:hover + .answer {
+      display: block;/* the answer will appear when hovering over the question */
+    }
+
+div.gallery {
+  margin: 3px;
+  border: 3px solid white;
+  float: left;
+  width: 900px;
+  
+}
+/*but when it's hovered, the border will change color to #777 which is darkgray*/
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 5px;
+  text-align: center;
+}
+
+/*giving name class an animation value*/
+div.name {
+  color: white;
+  animation-name: name;
+  animation-duration: 4s;
+  }
+/*a keyframe for name animation, it will change it's color due to their persentage*/
+@keyframes name {           
+  0%   {color: #4a7c59;}
+  25%  {color: #b3d89c;}
+  50%  {color: #2c7da0; }
+  100% {color: white;}
+}
+/* Style the header */
+header {
+  background-color: cornflowerblue;
+  padding: 10px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: blanchedalmond;
+  padding: 20px;
+  height: 3500px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: lightblue;
+  height: 500px; /* only for demonstration, should be removed */
+
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Styles for the navigation bar */
+    .navbar {
+      background-color: wheat;
+      overflow: hidden;
+    }
+    
+    /* Styles for the navigation bar links */
+    .navbar a {
+      float: center;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    
+    /* Styles for the active link, changing background color to #666 */
+    .navbar a.active {
+      background-color: blanchedalmond;
+    }

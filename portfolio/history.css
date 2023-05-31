@@ -1,0 +1,96 @@
+h1{
+  font-size: 60px;
+  letter-spacing: 3px;
+  text-align: center;
+  background-color: goldenrod;}
+
+body {
+  font-size: 25px;
+  background: lightgray;
+  text-align: center;
+  font-family: "Nunito";
+}
+footer {
+  background-color: white;
+  padding: 15px;
+  text-align: center;
+  color: black;
+}
+
+
+/* Styles for the navigation bar */
+    .navbar {
+      background-color: #333;
+      overflow: hidden;
+    }
+    
+    /* Styles for the navigation bar links */
+    .navbar a {
+      float: center;
+      color: #fff;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    
+    /* Styles for the active link, changing background color to #666 */
+    .navbar a.active {
+      background-color: #666;
+    }
+
+ /* Define the styles for the line and the circle */
+    #line {
+      width: 1400px;
+      height: 5px;
+      background-color: black;
+      position: relative;
+    }
+    /* style for circle, in 20 second it will follow the position below in keyframe*/
+    #circle {
+      width: 20px;
+      height: 20px;
+      background-color: black;
+      border-radius: 50%;
+      position: absolute;
+      top: 505px; /* Adjust the circle position */
+      left: 0;
+      animation: moveCircle 20s infinite linear;
+    }
+
+    /* keyframe(detail animation)for circle */
+    @keyframes moveCircle {
+      0% {
+        left: 0;
+      }
+      100% {
+        left: 1400px; 
+        /* the distance the circle should move */
+      }
+    }
+
+    /* Styles for the boxes */
+    .box {
+      width: 200px;
+      height: 700px;
+     
+      display: inline-block;
+      text-align: center;
+      border: 2px;
+    }
+/*style for image in the box  */
+    .box img {
+      width: 180px;
+      height: 150px;
+      margin-top: 20px;
+    }
+/* for date in time(date) in website, so "1969" can be on left and "now" can be on right side of the line */
+     .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .right {
+      text-align: right;
+    }

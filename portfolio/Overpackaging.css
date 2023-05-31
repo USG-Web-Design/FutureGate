@@ -1,0 +1,63 @@
+/* This is a comment */
+/* style for body, everything under body will follow this style 
+unless you assign them a new style later by using different element like class, div */
+body {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+/*different value for margin and padding, more detail*/
+h1 {
+	background-color: orangered;
+	margin: 0;
+	padding: 40px;
+	text-align: center;
+	font-family: impact;
+}
+
+h2 {
+	background-color: darkorange;
+	margin: 0;
+	padding: 10px;
+	text-align: center;
+	font-family: impact;
+}
+/*by making list style type to none, it would not show the bullet point which is for ul*/
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+li a {
+	display: block;
+	text-decoration: none;
+	color: tomato;
+}
+/*list change it's color when you hover it, tomato to blanchedalmond*/
+li a:hover {
+	color: blanchedalmond;
+}
+
+li {
+	margin: 0;
+	padding: 10px;
+	background-color: blanchedalmond;
+	font-size: 24px;
+}
+
+li:hover {
+	background-color: tomato;
+}
+/*before hovering over, dropdown content is not showing*/
+.dropdown-content {
+	display: none;
+}
+/*after hovering over, the text of the dropdown content will appear*/
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+p { 
+background-color: blanchedalmond; font-family: inherit; font-size: 25px; 	padding: 10px;
+ }
